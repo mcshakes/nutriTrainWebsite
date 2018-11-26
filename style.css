@@ -155,32 +155,95 @@ input[type="email"], textarea {
 
 .pricingTable_table__Middle:before {
   content: 'Most Popular';
-          /* position: absolute; */
-          color: white;
-          display: block;
-          background-color: #3bbdee;
-          text-align: center;
-          right: 15px;
-          top: -25px;
-          height: 65px;
-          width: 65px;
-          border-radius: 50%;
-          box-sizing: border-box;
-          font-size: 0.5em;
-          padding-top: 22px;
-          text-transform: uppercase;
-          letter-spacing: 0.13em;
-          transition: all 0.5s ease;
+  /* position: absolute; */
+  color: white;
+  display: block;
+  background-color: #3bbdee;
+  text-align: center;
+  right: 15px;
+  top: -25px;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 0.5em;
+  padding-top: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  transition: all 0.5s ease;
 }
 
 .pricingTable_table__Middle:hover:before {
   transform: rotate(360deg);
 }
 
+.firstTable__header {
+  font-size: 1.6em;
+  padding: 40px 0px;
+  border-bottom: 2px solid #ebedec;
+  letter-spacing: 0.03em;
+
+}
+
+.table__pricing {
+  font-size: 3em;
+  padding: 30px 0px;
+  border-bottom: 2px solid #ebedec;
+  line-height: 0.7;
+}
+
+.pricingTable__options {
+  list-style: none;
+  padding: 15px;
+  font-size: 0.9em;
+  border-bottom: 2px solid #ebedec;
+}
+
+.pricingTable__options li {
+  padding: 8px 0px;
+}
+
+.pricingTable__options li:before {
+  content: '✓';
+  display: inline-block;
+  margin-right: 15px;
+  color: white;
+  background-color: #74ce6a;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 0.8em;
+  padding: 2px;
+  text-align: center;
+}
+
+.pricingTable__get-started {
+  color: white;
+  background-color: #71ce73;
+  margin-top: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px;
+  box-shadow: 0px 3px 0px 0px rgba(102, 172, 100, 1);
+  letter-spacing: 0.07em;
+  transition: all 0.4s ease;
+}
+
+.pricingTable__get-started:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 40px 29px -19px rgba(102, 172, 100, 0.9);
+}
+
 @media screen and (max-width: 480px){
 
   .pricingTable-subtitle {
     margin-bottom: 30px;
+  }
+
+  .pricingTable__options {
+    font-size: 1.3em;
+    margin-right: none;
+    margin-bottom: 10px;
   }
 }
 
@@ -201,4 +264,23 @@ input[type="email"], textarea {
     content: '';
     clear: both;
   }
+
+  .pricingTable__options {
+    border-bottom: none;
+    padding: 0;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1068px){
+
+
+  .firstTable__header {
+    font-size: 1.45em;
+  }
+
+  .pricingTable__options {
+    font-size: 0.85em;
+  }
+
 }
