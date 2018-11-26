@@ -59,6 +59,19 @@ body {
   border-radius: 2px;
 }
 
+.aside-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  height: 100%;
+}
+
+#message {
+  flex: 1; /* consume available width */
+  align-self: flex-start; /* override flex full-height columns feature */
+}
+
+
 input[type="text"],
 input[type="email"], textarea {
   background-color: rgba(227, 228, 230, 0.2);
@@ -70,7 +83,6 @@ input[type="email"], textarea {
 
 .contact-form-button {
   border: 1px solid #44C184;
-  margin-left: 10px;
   padding: 10px;
   transition: background-color .5s, color .5s;
   width: 100%;
