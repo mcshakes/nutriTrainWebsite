@@ -134,8 +134,47 @@ input[type="email"], textarea {
   border-radius: 5px;
 }
 
+.pricingTable_table__Middle {
+  vertical-align: middle;
+  width: 31%;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 0px 30px 40px;
+  text-align: center;
+  max-width: 320px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.pricingTable_table__Middle:hover{
+  transform: scale(1.08);
+}
+
 .pricingTable_table:hover{
   transform: scale(1.08);
+}
+
+.pricingTable_table__Middle:before {
+  content: 'Most Popular';
+          /* position: absolute; */
+          color: white;
+          display: block;
+          background-color: #3bbdee;
+          text-align: center;
+          right: 15px;
+          top: -25px;
+          height: 65px;
+          width: 65px;
+          border-radius: 50%;
+          box-sizing: border-box;
+          font-size: 0.5em;
+          padding-top: 22px;
+          text-transform: uppercase;
+          letter-spacing: 0.13em;
+          transition: all 0.5s ease;
+}
+
+.pricingTable_table__Middle:hover:before {
+  transform: rotate(360deg);
 }
 
 @media screen and (max-width: 480px){
