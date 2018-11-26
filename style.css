@@ -30,22 +30,33 @@ body {
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
-  margin: 40px 0;
-  padding: 50px;
+  margin: 10px 0;
+  padding: 15px;
+
+
+  /* display: grid;
+  grid-template-columns: 10px auto 10px auto 10px; */
 }
 
 .contact-form-header h1 {
   font-size: 30px;
   margin-bottom: 20px;
+  /* grid-column: 1/5; */
 }
 
 .contact-form {
   background-color: #F6F7F8;
-  border: 1px solid #D6D9DC;
   border-radius: 3px;
 
   padding: 50px;
   margin: 0 0 40px 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5em;
+  align-items: center;
+  padding: .5em;
+  border-radius: 2px;
 }
 
 input[type="text"],
@@ -54,5 +65,13 @@ input[type="email"], textarea {
   border: 1px solid rgba(0, 0, 0, .2);
   margin: 20px 0;
   padding: 10px;
+  width: 100%;
+}
+
+.contact-form-button {
+  border: 1px solid #44C184;
+  margin-left: 10px;
+  padding: 10px;
+  transition: background-color .5s, color .5s;
   width: 100%;
 }
