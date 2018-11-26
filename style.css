@@ -8,7 +8,42 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   line-height: 1.5;
 
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 1em;
+}
+
+.main-header,
+.call-to-action, footer, main {
+  grid-column: 1 / 4;
+  border: 2px dotted red;
+}
+
+.promote-reasons, .pricing-structure {
+  grid-column: 1 / 4;
+  border: 2px dotted blue;
+}
+
+.contact {
+  text-align: center;
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  margin: 40px 0;
+  padding: 50px;
+}
+
+.contact-form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  padding: 50px;
+  margin: 0 0 40px 0;
 }
