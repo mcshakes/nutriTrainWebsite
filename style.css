@@ -23,6 +23,8 @@ body {
   display: grid;
   width: 100%;
   grid-template-columns: 50% 50%;
+  padding: 0 10px 0 10px;
+
 }
 
 .main-header h1 {
@@ -31,9 +33,10 @@ body {
 
 .main-header ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
-
+  padding-top: 5px;
+  align-items;
 }
 
 .main-header a {
@@ -280,6 +283,27 @@ input[type="email"], textarea {
 }
 
 @media screen and (max-width: 767px){
+
+  .navbar-toggle {
+    font-size: 2em;
+    color: #44C184;
+    align-items: right;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .main-header nav {
+
+
+  }
+
+  .main-header h1 {
+
+  }
+
+  .main-header ul   {
+    display: none;
+  }
 
   .pricingTable_table {
     display: block;
