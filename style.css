@@ -50,6 +50,21 @@ body {
   align-items: right;
 }
 
+.hero {
+  background: url("./images/breakfast.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .main-header a {
   color: #44C184;
   text-decoration: none;
@@ -58,7 +73,6 @@ body {
 .main-header,
 .call-to-action, footer, main {
   grid-column: 1 / 4;
-  border: 2px dotted red;
 }
 
 .promote-reasons, .pricing-structure {
