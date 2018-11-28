@@ -63,6 +63,13 @@ body {
   justify-content: center;
   align-items: center;
 
+  text-align: center;
+
+  animation-name: fadeIn;
+
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .main-header a {
