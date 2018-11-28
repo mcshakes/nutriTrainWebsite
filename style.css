@@ -13,6 +13,17 @@ body {
   grid-gap: 1em;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
 /* --------------------------- Nav Bar --------------------------------- */
 
 .main-header {
@@ -115,19 +126,28 @@ body {
 .benefits {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  animation-name: fadeIn;
+
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
 
 
-    flex-direction: column;
-    align-items: center;
 
+.benefits h4 {
+  font-size: 1.5em;
 }
 
 .benefits-image {
-  font-size: 2em;
+  font-size: 3em;
   color: #44C184;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 input[type="text"],
