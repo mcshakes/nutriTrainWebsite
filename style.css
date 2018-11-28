@@ -284,6 +284,12 @@ input[type="email"], textarea {
 
 @media screen and (max-width: 767px){
 
+  #toggle {
+    position: absolute;
+    left: -100%;
+    top: -100%;
+  }
+
   .navbar-toggle {
     font-size: 2em;
     color: #44C184;
