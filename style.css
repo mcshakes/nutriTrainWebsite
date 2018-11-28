@@ -10,7 +10,7 @@ body {
 
   display: grid;
   grid-template-columns: 150px auto 150px;
-  grid-gap: 1em;
+  column-gap: 1em;
 }
 
 @keyframes fadeIn {
@@ -340,8 +340,13 @@ input[type="email"], textarea {
 
 @media screen and (max-width: 480px){
 
+  .pricingTable-title {
+    font-size: 200%;
+  }
+
   .pricingTable-subtitle {
     margin-bottom: 30px;
+    font-size: 1.5em;
   }
 
   .pricingTable__options {
@@ -349,9 +354,23 @@ input[type="email"], textarea {
     margin-right: none;
     margin-bottom: 10px;
   }
+
+  .promote-reasons {
+    display: flex;
+    flex-direction: column
+  }
+
+  .benefits p {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px){
+
+  .main-header nav {
+    display: flex;
+    justify-content: center;
+  }
 
   #toggle {
     position: absolute;
@@ -367,17 +386,13 @@ input[type="email"], textarea {
     justify-content: center
   }
 
-  .main-header nav {
-
-
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .main-header h1 {
-
-  }
-
-  .main-header ul   {
-    display: none;
+  #header-title {
+    display: none
   }
 
   .pricingTable_table {
@@ -404,10 +419,6 @@ input[type="email"], textarea {
 }
 
 @media screen and (max-width: 1068px){
-
-  .navbar-toggle {
-    display: none;
-  }
 
   .firstTable__header {
     font-size: 1.45em;
