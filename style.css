@@ -191,6 +191,7 @@ input[type="email"], textarea {
 
 .pricing-structure {
   margin: 40px auto;
+  background-color: #f0f4f7;
 }
 
 .pricingTable {
@@ -283,6 +284,13 @@ input[type="email"], textarea {
   border-bottom: 2px solid #ebedec;
   letter-spacing: 0.03em;
 
+}
+
+.lastTable__header {
+  font-size: 1.6em;
+  padding: 40px 0px;
+  border-bottom: 2px solid #ebedec;
+  letter-spacing: 0.03em;
 }
 
 .table__pricing {
