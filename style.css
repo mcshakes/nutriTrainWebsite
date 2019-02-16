@@ -352,6 +352,24 @@ footer {
   width: 100%;
   border-bottom: 2px solid #394750;
   padding: 30px 0 35px 0;
+
+
+  display: grid;
+  grid-template-columns: 15% 20% 20% 20% 15%;
+}
+
+.blurb {
+  grid-column: 2/5;
+}
+
+.lower-footer-links {
+  grid-column: 1/7;
+}
+
+.footer-social {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 480px){
