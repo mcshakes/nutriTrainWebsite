@@ -346,6 +346,14 @@ input[type="email"], textarea {
   transform: scale(0.95) translateY(-9px);
 }
 
+footer {
+  background-color: #262c30;
+  color: #fff;
+  width: 100%;
+  border-bottom: 2px solid #394750;
+  padding: 30px 0 35px 0;
+}
+
 @media screen and (max-width: 480px){
 
   .pricingTable-title {
