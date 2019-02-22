@@ -91,12 +91,8 @@ body {
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
-  margin: 10px 0;
+  margin: 0 auto;
   padding: 15px;
-
-
-  /* display: grid;
-  grid-template-columns: 10px auto 10px auto 10px; */
 }
 
 .contact-form-header h1 {
@@ -135,12 +131,14 @@ body {
 .promote-reasons {
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
+  padding-top: 20px;
 }
 
 .why-us {
   grid-column: 1/4;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .benefits {
@@ -150,10 +148,10 @@ body {
   align-items: center;
 
   animation-name: fadeIn;
-
   animation-name: fadeIn;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
+  padding: 0 12px 0 12px;
 }
 
 
@@ -353,10 +351,7 @@ footer {
   background-color: #262c30;
   color: #fff;
   width: 100%;
-  border-bottom: 2px solid #394750;
-  padding: 30px 0 35px 0;
-
-
+  padding: 20px 0 20px 0;
   display: grid;
   grid-template-columns: 15% 20% 20% 20% 15%;
 }
