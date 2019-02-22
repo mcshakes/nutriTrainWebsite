@@ -175,6 +175,25 @@ input[type="email"], textarea {
   margin: 20px 0;
   padding: 10px;
   width: 100%;
+  transition: 0.4s;
+}
+
+input[type="text"]:focus {
+  background-color: #f0f0f0;
+  border: solid 2px #c0c0c0;
+  outline: none;
+}
+
+input[type="email"]:focus {
+  background-color: #f0f0f0;
+  border: solid 2px #c0c0c0;
+  outline: none;
+}
+
+#message:focus {
+  background-color: #f0f0f0;
+  border: solid 2px #c0c0c0;
+  outline: none;
 }
 
 .contact-form-button {
@@ -184,6 +203,11 @@ input[type="email"], textarea {
   width: 100%;
 }
 
+.contact-form-button:hover {
+   background: #7dcbc4;
+   outline: none;
+   color: #333;
+ }
 /* --------------------------- PRICING TABLE --------------------------------- */
 
 .pricing-structure {
